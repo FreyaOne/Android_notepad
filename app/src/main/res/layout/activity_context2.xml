@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+    <EditText
+        android:id="@+id/editTit"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="16dp"
+        android:hint="标题"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/editCon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editCon"
+        android:layout_width="355dp"
+        android:layout_height="365dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTit" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="10dp"
+        android:text="修改"
+        android:background="#2ECC71"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCon" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="70dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:text="删除"
+        android:background="#E74C3C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCon" />
+</android.support.constraint.ConstraintLayout>
